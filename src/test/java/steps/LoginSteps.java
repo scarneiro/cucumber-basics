@@ -17,18 +17,22 @@ public class LoginSteps {
         System.out.println("user validates the homepage title");
     }
 
-    @Then("user enters username")
-    public void user_enters_username() {
-        System.out.println("user enters username");
+    @Then("user enters {string} username")
+    public void user_enters_username(String username) {
+        System.out.println("user enters " + username + " username");
     }
 
-    @And("user enters password")
-    public void user_enters_password() {
-        System.out.println("user enters password");
+    @And("user enters {string} password")
+    public void user_enters_password(String password) {
+        System.out.println("user enters " + password + " password");
     }
 
     @And("user clicks on the signin button")
     public void user_clicks_on_the_signin_button() {
         System.out.println("user clicks on the signin button");
+    }
+
+    @And("user validates captcha image")
+    public void userValidatesCaptchaImage() {
     }
 }
